@@ -1,0 +1,133 @@
+:root {
+  --title-color: #333;
+  --primary-color: #95e1d3;
+  --second-color: rgb(233, 129, 129);
+  --third-color: rgb(241, 217, 138);
+  --text-color: #999;
+  --gray-color: #f8f8f8;
+  --bgc-color: linear-gradient(
+    to bottom,
+    rgba(233, 129, 129, 0.85),
+    rgba(247, 217, 138, 0.85)
+  );
+}
+
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1;
+  color: var(--title-color);
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+h2 {
+  color: var(--title-color);
+}
+
+h5 {
+  font-family: "Kaushan Script", cursive;
+  color: var(--title-color);
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  color: var(--text-color);
+  font-size: 1.5rem;
+}
+
+.wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.content {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.menu__header {
+  padding-top: 9rem;
+  text-align: center;
+}
+
+.title-name {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+}
+.heading-menu {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 4rem;
+}
+.menu-line {
+  display: inline-block;
+  width: 6rem;
+  height: 4px;
+  background-color: var(--second-color);
+  margin-bottom: 5rem;
+}
+.text-menu {
+  max-width: 97rem;
+  display: block;
+  margin: 0 auto 10rem;
+  line-height: 1.4;
+}
+
+.menu__footer {
+  background-color: #f8f8f8;
+  padding: 10rem 0;
+}
+
+.menu__footer-wrap {
+  display: flex;
+  align-items: center;
+}
+.menu__footer-icon-right,
+.menu__footer-icon-left {
+  font-size: 2.4rem;
+  color: #ccc;
+}
+
+.menu__footer-infor {
+  padding: 1.5rem;
+}
+.menu__footer-text {
+  line-height: 1.6;
+  text-align: justify;
+}
+.menu__footer-name {
+  display: inline-block;
+  position: relative;
+  font-size: 2.4rem;
+  padding-left: 1rem;
+  margin-left: 6rem;
+}
+
+.menu__footer-name::before {
+  content: "";
+  display: inline-block;
+  width: 6rem;
+  height: 4px;
+  position: absolute;
+  background-color: var(--second-color);
+  top: 50%;
+  left: -6rem;
+  transform: translateY(-50%);
+}
